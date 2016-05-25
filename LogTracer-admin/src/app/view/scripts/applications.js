@@ -10,7 +10,7 @@ $(document).ready(function() {
 		"processing": true,
 		"serverSide": true,
 		"ajax": {
-			"url": "http://localhost:8080/api/application",
+			"url": "https://secret-forest-89408.herokuapp.com/api/application",
 			"dataSrc" : "applications",
 			"error" : errorHandler,
 			"dataFilter" : function(data){

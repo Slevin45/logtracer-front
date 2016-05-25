@@ -23,7 +23,7 @@ $('document').ready(function(){
 		console.log(appName);
 		$.ajax({
 			type : 'POST',
-			url  : 'http://localhost:8080/api/application',
+			url  : 'https://secret-forest-89408.herokuapp.com/api/application',
 			contentType: "application/json", 
 			dataType : 'json', 
 			data : JSON.stringify({name : appName}),

@@ -13,7 +13,7 @@ $(document).ready(function(){
 		"processing": true,
 		"serverSide": true,
 		"ajax":{
-			"url": 'http://localhost:8080/api/api/logs/' + appId,
+			"url": 'https://secret-forest-89408.herokuapp.com/api/api/logs/' + appId,
 			"data": function ( d ) {
 				return  $.extend(d, logsData);
 			},
