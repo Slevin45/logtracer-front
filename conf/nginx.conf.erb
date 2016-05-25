@@ -42,7 +42,7 @@ http {
 	
 	location / {
 	#    if ($request_uri = /) {
-	#	root ../LogTracer-admin/src/;
+	#	root <%= ENV['HOME'] %>/LogTracer-admin/src/;
       	#	index main.html;
     	#	} 
       	    root  ../LogTracer-admin/src/app/view/;
