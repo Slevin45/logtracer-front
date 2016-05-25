@@ -42,7 +42,7 @@ $('document').ready(function() {
 
 		$.ajax({
 			type : 'POST',
-			url  : 'http://localhost:8080/api/anon/register',
+			url  : 'http://secret-forest-89408.herokuapp.com/api/anon/register',
 			contentType: "application/json",
 			dataType : 'json', 
 			data : JSON.stringify({login : login, password : encodedPassword, name : name}),
