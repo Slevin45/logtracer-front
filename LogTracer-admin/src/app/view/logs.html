@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LogTracer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/app.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+	<script   src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="/scripts/logs.js"></script>
+	<script type="text/javascript" src="/scripts/header.js"></script> 
+</head>
+<body>
+	<div id="includedContent"></div>
+	<hr/>
+	<div class="log-form">
+		<div class="container">
+			<form class="form-logs" method="get" id="logs-form">
+				<div id="error">
+				</div>
+				<div class="form-group col-xs-4">
+					Message : <input type="text" class="form-control"  name="message" id="message" />
+				</div>
+				<div class="form-group col-xs-4">
+					Start date : <input type="date" class="form-control" name="startDate" id="startDate" />
+				</div>
+				<div class="form-group col-xs-4">
+					End date : <input type="date" class="form-control" name="endDate" id="endDate" />
+				</div>
+
+				<div class="form-group">
+					<input type="submit" class="btn btn-primary" value="Filter">
+				</div>
+			</form>
+		</div>
+		<h2>Logs</h2>
+		<table id="logs" class="display" cellpadding="0" width="100%">
+			<thead>
+				<tr>
+					<th>appId</th>
+					<th>create timestamp</th>
+					<th>message</th>
+					<th>exception</th>
+					<th>tag</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+</body>
+</html>
