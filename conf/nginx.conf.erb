@@ -45,7 +45,7 @@ http {
 	#	root <%= ENV['HOME'] %>/LogTracer-admin/src/;
       	#	index main.html;
     	#	} 
-      	    root  ../LogTracer-admin/src/app/view/;
+      	    root  <%= ENV['HOME'] %>/LogTracer-admin/src/app/view/;
             try_files $uri $uri/main.html $uri.html;
 	}
 		
